@@ -1,0 +1,7 @@
+# SteganographyKit document generator jazzy settings
+
+copyright: Copyright 2023 SteganographyKit
+author: Caio Franca
+xcodebuild_arguments: [-target, SteganographyKit-iOS]
+clean: true
+output: ./Documentation
