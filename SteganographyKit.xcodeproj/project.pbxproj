@@ -8,19 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D3561662B313B9500C08D33 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* SteganographyManager.swift */; };
-		3D3561672B313B9500C08D33 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* SteganographyManager.swift */; };
-		3D3561682B313B9500C08D33 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* SteganographyManager.swift */; };
-		3D3561692B313B9500C08D33 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* SteganographyManager.swift */; };
 		3D9C42A222745900000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
-		3D9C42B1227459C1000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
-		3D9C42BF227459F6000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
-		3D9C42CD22745A28000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
 		3D9C42F62274604A000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; };
 		3D9C42FC22746078000A6585 /* SteganographyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */; };
-		3D9C43062274611B000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42A92274599D000A6585 /* SteganographyKit.framework */; };
-		3D9C430C22746131000A6585 /* SteganographyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */; };
-		3D9C431622746198000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42C522745A07000A6585 /* SteganographyKit.framework */; };
-		3D9C431C227461AF000A6585 /* SteganographyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
@@ -36,20 +26,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D9C428F22745894000A6585;
 			remoteInfo = "SteganographyKit-iOS";
-		};
-		3D9C43072274611B000A6585 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D9C428722745894000A6585 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D9C42A82274599D000A6585;
-			remoteInfo = "SteganographyKit-tvOS";
-		};
-		3D9C431722746198000A6585 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D9C428722745894000A6585 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D9C42C422745A07000A6585;
-			remoteInfo = "SteganographyKit-macOS";
 		};
 		3D9C433622746323000A6585 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -80,19 +56,13 @@
 		3D9C429C227458E8000A6585 /* SteganographyKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SteganographyKit.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* SteganographyKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SteganographyKitTests.plist; sourceTree = "<group>"; };
 		3D9C42A122745900000A6585 /* SteganographyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyKit.swift; sourceTree = "<group>"; };
-		3D9C42A92274599D000A6585 /* SteganographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SteganographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9C42B7227459D6000A6585 /* SteganographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SteganographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9C42C522745A07000A6585 /* SteganographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SteganographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42D222745B48000A6585 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		3D9C42D322745B48000A6585 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		3D9C42D422745B48000A6585 /* SteganographyKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SteganographyKit.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyKitTests.swift; sourceTree = "<group>"; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		3D9C42EC22745FDA000A6585 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		3D9C42F12274604A000A6585 /* SteganographyKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SteganographyKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9C43012274611B000A6585 /* SteganographyKit-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SteganographyKit-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9C431122746198000A6585 /* SteganographyKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SteganographyKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43212274629B000A6585 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43232274629B000A6585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9C43252274629B000A6585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,48 +80,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C42A62274599D000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42B4227459D6000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42C222745A07000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D9C42EE2274604A000A6585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D9C42F62274604A000A6585 /* SteganographyKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42FE2274611B000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C43062274611B000A6585 /* SteganographyKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C430E22746198000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C431622746198000A6585 /* SteganographyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,12 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C429022745894000A6585 /* SteganographyKit.framework */,
-				3D9C42A92274599D000A6585 /* SteganographyKit.framework */,
-				3D9C42B7227459D6000A6585 /* SteganographyKit.framework */,
-				3D9C42C522745A07000A6585 /* SteganographyKit.framework */,
 				3D9C42F12274604A000A6585 /* SteganographyKit-iOSTests.xctest */,
-				3D9C43012274611B000A6585 /* SteganographyKit-tvOSTests.xctest */,
-				3D9C431122746198000A6585 /* SteganographyKit-macOSTests.xctest */,
 				3D9C43212274629B000A6585 /* Example.app */,
 			);
 			name = Products;
@@ -197,7 +125,6 @@
 			children = (
 				3D9C429C227458E8000A6585 /* SteganographyKit.plist */,
 				3D9C429D227458E8000A6585 /* SteganographyKitTests.plist */,
-				3D9C42D422745B48000A6585 /* SteganographyKit.podspec */,
 				3D9C42D322745B48000A6585 /* Package.swift */,
 				3D9C42D222745B48000A6585 /* LICENSE */,
 				3D9C42D522745B48000A6585 /* README.md */,
@@ -255,27 +182,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C42A42274599D000A6585 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42B2227459D6000A6585 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42C022745A07000A6585 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -297,60 +203,6 @@
 			productReference = 3D9C429022745894000A6585 /* SteganographyKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3D9C42A82274599D000A6585 /* SteganographyKit-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C42AE2274599D000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-tvOS" */;
-			buildPhases = (
-				3D9C42A42274599D000A6585 /* Headers */,
-				3D9C42A52274599D000A6585 /* Sources */,
-				3D9C42A62274599D000A6585 /* Frameworks */,
-				3D9C42A72274599D000A6585 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SteganographyKit-tvOS";
-			productName = "SteganographyKit-tvOS";
-			productReference = 3D9C42A92274599D000A6585 /* SteganographyKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3D9C42B6227459D6000A6585 /* SteganographyKit-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C42BC227459D6000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-watchOS" */;
-			buildPhases = (
-				3D9C42B2227459D6000A6585 /* Headers */,
-				3D9C42B3227459D6000A6585 /* Sources */,
-				3D9C42B4227459D6000A6585 /* Frameworks */,
-				3D9C42B5227459D6000A6585 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SteganographyKit-watchOS";
-			productName = "SteganographyKit-watchOS";
-			productReference = 3D9C42B7227459D6000A6585 /* SteganographyKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3D9C42C422745A07000A6585 /* SteganographyKit-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C42CA22745A07000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-macOS" */;
-			buildPhases = (
-				3D9C42C022745A07000A6585 /* Headers */,
-				3D9C42C122745A07000A6585 /* Sources */,
-				3D9C42C222745A07000A6585 /* Frameworks */,
-				3D9C42C322745A07000A6585 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SteganographyKit-macOS";
-			productName = "SteganographyKit-macOS";
-			productReference = 3D9C42C522745A07000A6585 /* SteganographyKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		3D9C42F02274604A000A6585 /* SteganographyKit-iOSTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C42F92274604A000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-iOSTests" */;
@@ -367,42 +219,6 @@
 			name = "SteganographyKit-iOSTests";
 			productName = "SteganographyKit-iOSTests";
 			productReference = 3D9C42F12274604A000A6585 /* SteganographyKit-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3D9C43002274611B000A6585 /* SteganographyKit-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C43092274611B000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-tvOSTests" */;
-			buildPhases = (
-				3D9C42FD2274611B000A6585 /* Sources */,
-				3D9C42FE2274611B000A6585 /* Frameworks */,
-				3D9C42FF2274611B000A6585 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D9C43082274611B000A6585 /* PBXTargetDependency */,
-			);
-			name = "SteganographyKit-tvOSTests";
-			productName = "SteganographyKit-tvOSTests";
-			productReference = 3D9C43012274611B000A6585 /* SteganographyKit-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3D9C431022746198000A6585 /* SteganographyKit-macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C431922746198000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-macOSTests" */;
-			buildPhases = (
-				3D9C430D22746198000A6585 /* Sources */,
-				3D9C430E22746198000A6585 /* Frameworks */,
-				3D9C430F22746198000A6585 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D9C431822746198000A6585 /* PBXTargetDependency */,
-			);
-			name = "SteganographyKit-macOSTests";
-			productName = "SteganographyKit-macOSTests";
-			productReference = 3D9C431122746198000A6585 /* SteganographyKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D9C43202274629B000A6585 /* Example */ = {
@@ -439,22 +255,7 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
-					3D9C42A82274599D000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					3D9C42B6227459D6000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					3D9C42C422745A07000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 					3D9C42F02274604A000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					3D9C43002274611B000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					3D9C431022746198000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					3D9C43202274629B000A6585 = {
@@ -476,12 +277,7 @@
 			projectRoot = "";
 			targets = (
 				3D9C428F22745894000A6585 /* SteganographyKit-iOS */,
-				3D9C42A82274599D000A6585 /* SteganographyKit-tvOS */,
-				3D9C42B6227459D6000A6585 /* SteganographyKit-watchOS */,
-				3D9C42C422745A07000A6585 /* SteganographyKit-macOS */,
 				3D9C42F02274604A000A6585 /* SteganographyKit-iOSTests */,
-				3D9C43002274611B000A6585 /* SteganographyKit-tvOSTests */,
-				3D9C431022746198000A6585 /* SteganographyKit-macOSTests */,
 				3D9C43202274629B000A6585 /* Example */,
 			);
 		};
@@ -495,42 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C42A72274599D000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42B5227459D6000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42C322745A07000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D9C42EF2274604A000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42FF2274611B000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C430F22746198000A6585 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -558,54 +319,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C42A52274599D000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D3561672B313B9500C08D33 /* SteganographyManager.swift in Sources */,
-				3D9C42B1227459C1000A6585 /* SteganographyKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42B3227459D6000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D3561682B313B9500C08D33 /* SteganographyManager.swift in Sources */,
-				3D9C42BF227459F6000A6585 /* SteganographyKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42C122745A07000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D3561692B313B9500C08D33 /* SteganographyManager.swift in Sources */,
-				3D9C42CD22745A28000A6585 /* SteganographyKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D9C42ED2274604A000A6585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D9C42FC22746078000A6585 /* SteganographyKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C42FD2274611B000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C430C22746131000A6585 /* SteganographyKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C430D22746198000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C431C227461AF000A6585 /* SteganographyKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,16 +343,6 @@
 			isa = PBXTargetDependency;
 			target = 3D9C428F22745894000A6585 /* SteganographyKit-iOS */;
 			targetProxy = 3D9C42F72274604A000A6585 /* PBXContainerItemProxy */;
-		};
-		3D9C43082274611B000A6585 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D9C42A82274599D000A6585 /* SteganographyKit-tvOS */;
-			targetProxy = 3D9C43072274611B000A6585 /* PBXContainerItemProxy */;
-		};
-		3D9C431822746198000A6585 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D9C42C422745A07000A6585 /* SteganographyKit-macOS */;
-			targetProxy = 3D9C431722746198000A6585 /* PBXContainerItemProxy */;
 		};
 		3D9C433722746323000A6585 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -852,212 +560,6 @@
 			};
 			name = Release;
 		};
-		3D9C42AF2274599D000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-tvOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		3D9C42B02274599D000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-tvOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Release;
-		};
-		3D9C42BD227459D6000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-watchOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		3D9C42BE227459D6000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-watchOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		3D9C42CB22745A07000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-macOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3D9C42CC22745A07000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Configs/SteganographyKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-macOS";
-				PRODUCT_NAME = SteganographyKit;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		3D9C42FA2274604A000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1093,88 +595,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3D9C430A2274611B000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Configs/SteganographyKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		3D9C430B2274611B000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Configs/SteganographyKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Release;
-		};
-		3D9C431A22746198000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				INFOPLIST_FILE = Configs/SteganographyKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3D9C431B22746198000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				INFOPLIST_FILE = Configs/SteganographyKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.SteganographyKit.SteganographyKit-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1243,56 +663,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D9C42AE2274599D000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C42AF2274599D000A6585 /* Debug */,
-				3D9C42B02274599D000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D9C42BC227459D6000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C42BD227459D6000A6585 /* Debug */,
-				3D9C42BE227459D6000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D9C42CA22745A07000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C42CB22745A07000A6585 /* Debug */,
-				3D9C42CC22745A07000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3D9C42F92274604A000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D9C42FA2274604A000A6585 /* Debug */,
 				3D9C42FB2274604A000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D9C43092274611B000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C430A2274611B000A6585 /* Debug */,
-				3D9C430B2274611B000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D9C431922746198000A6585 /* Build configuration list for PBXNativeTarget "SteganographyKit-macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C431A22746198000A6585 /* Debug */,
-				3D9C431B22746198000A6585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

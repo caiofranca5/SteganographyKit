@@ -21,7 +21,9 @@ public struct RGBA32: Equatable {
 
 public class SteganographyManager {
     
-    public func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
+    public init() {}
+    
+    public static func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
         guard let inputCGImage = image.cgImage else { return nil }
         let bitmapData = createBitmap(from: inputCGImage)
         
@@ -53,7 +55,7 @@ public class SteganographyManager {
         return bitmapData.context.makeImage().flatMap { UIImage(cgImage: $0, scale: image.scale, orientation: image.imageOrientation) }
     }
     
-    public func readMessageFromImage(image: UIImage) -> String? {
+    public static func readMessageFromImage(image: UIImage) -> String? {
         guard let inputCGImage = image.cgImage else { return nil }
         let bitmapData = createBitmap(from: inputCGImage)
         
@@ -91,7 +93,7 @@ public class SteganographyManager {
         return message
     }
     
-    public func createBitmap(from cgImage: CGImage) -> (context: CGContext, buffer: UnsafeMutablePointer<RGBA32>, width: Int, height: Int) {
+    private static func createBitmap(from cgImage: CGImage) -> (context: CGContext, buffer: UnsafeMutablePointer<RGBA32>, width: Int, height: Int) {
         let width = cgImage.width
         let height = cgImage.height
         let bytesPerPixel = 4
