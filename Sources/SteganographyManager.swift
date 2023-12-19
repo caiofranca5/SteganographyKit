@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct RGBA32: Equatable {
+public struct RGBA32: Equatable {
     var color: UInt32
     
     var red: UInt8 {
@@ -21,7 +21,7 @@ struct RGBA32: Equatable {
 
 public class SteganographyManager {
     
-    static public func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
+    public func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
         guard let inputCGImage = image.cgImage else { return nil }
         let bitmapData = createBitmap(from: inputCGImage)
         
@@ -53,7 +53,7 @@ public class SteganographyManager {
         return bitmapData.context.makeImage().flatMap { UIImage(cgImage: $0, scale: image.scale, orientation: image.imageOrientation) }
     }
     
-    static public func readMessageFromImage(image: UIImage) -> String? {
+    public func readMessageFromImage(image: UIImage) -> String? {
         guard let inputCGImage = image.cgImage else { return nil }
         let bitmapData = createBitmap(from: inputCGImage)
         
@@ -91,7 +91,7 @@ public class SteganographyManager {
         return message
     }
     
-    private static func createBitmap(from cgImage: CGImage) -> (context: CGContext, buffer: UnsafeMutablePointer<RGBA32>, width: Int, height: Int) {
+    public func createBitmap(from cgImage: CGImage) -> (context: CGContext, buffer: UnsafeMutablePointer<RGBA32>, width: Int, height: Int) {
         let width = cgImage.width
         let height = cgImage.height
         let bytesPerPixel = 4
