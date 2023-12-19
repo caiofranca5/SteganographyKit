@@ -82,10 +82,7 @@
 		3D9C42D322745B48000A6585 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		3D9C42D422745B48000A6585 /* SteganographyKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SteganographyKit.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
 		3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyKitTests.swift; sourceTree = "<group>"; };
-		3D9C42D822745DAF000A6585 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
-		3D9C42D922745DAF000A6585 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		3D9C42EC22745FDA000A6585 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		3D9C42F12274604A000A6585 /* SteganographyKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SteganographyKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,15 +194,9 @@
 				3D9C429D227458E8000A6585 /* SteganographyKitTests.plist */,
 				3D9C42D422745B48000A6585 /* SteganographyKit.podspec */,
 				3D9C42D322745B48000A6585 /* Package.swift */,
-				3D9C42D622745C9D000A6585 /* Fastfile */,
 				3D9C42D222745B48000A6585 /* LICENSE */,
 				3D9C42D522745B48000A6585 /* README.md */,
 				3D9C42DB22745DB0000A6585 /* .gitignore */,
-				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
-				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
-				3DB91AC4229AC263002668DA,
-				3DB91AC5229AC26C002668DA,
-				3DB91AC6229AC272002668DA,
 				3DF6F6282315616D00706C4E /* main.yml */,
 			);
 			path = Configs;
@@ -290,7 +281,6 @@
 				3D9C428C22745894000A6585 /* Sources */,
 				3D9C428D22745894000A6585 /* Frameworks */,
 				3D9C428E22745894000A6585 /* Resources */,
-				3D9C42CE22745AEA000A6585 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -309,7 +299,6 @@
 				3D9C42A52274599D000A6585 /* Sources */,
 				3D9C42A62274599D000A6585 /* Frameworks */,
 				3D9C42A72274599D000A6585 /* Resources */,
-				3D9C42CF22745AF5000A6585 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -328,7 +317,6 @@
 				3D9C42B3227459D6000A6585 /* Sources */,
 				3D9C42B4227459D6000A6585 /* Frameworks */,
 				3D9C42B5227459D6000A6585 /* Resources */,
-				3D9C42D022745AFE000A6585 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -347,7 +335,6 @@
 				3D9C42C122745A07000A6585 /* Sources */,
 				3D9C42C222745A07000A6585 /* Frameworks */,
 				3D9C42C322745A07000A6585 /* Resources */,
-				3D9C42D122745B08000A6585 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -553,81 +540,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3D9C42CE22745AEA000A6585 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		3D9C42CF22745AF5000A6585 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		3D9C42D022745AFE000A6585 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		3D9C42D122745B08000A6585 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D9C428C22745894000A6585 /* Sources */ = {

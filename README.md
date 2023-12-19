@@ -23,7 +23,7 @@
 # SteganographyKit
 
 <p align="center">
-ℹ️ Short description of SteganographyKit
+ℹ️  SteganographyKit is an iOS framework designed to seamlessly integrate steganography into mobile applications. It provides developers with a simple and efficient way to embed and extract hidden messages or data within images. Featuring an easy-to-use public interface, the kit ensures secure and subtle data encoding, making it ideal for applications requiring confidentiality, like secure messaging or digital watermarking.
 </p>
 
 ## Features
@@ -76,9 +76,6 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 ## Usage
 
 ℹ️ Describe the usage of your Kit
-
-## Contributing
-Contributions are very welcome 🙌
 
 ## License
 
