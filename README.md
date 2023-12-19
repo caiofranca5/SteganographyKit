@@ -23,39 +23,18 @@
 # SteganographyKit
 
 <p align="center">
-ℹ️ Short description of SteganographyKit
+SteganographyKit is an iOS framework designed to seamlessly integrate steganography into mobile applications. It provides developers with a simple and efficient way to embed and extract hidden messages or data within images. Featuring an easy-to-use public interface, the kit ensures secure and subtle data encoding, making it ideal for applications requiring confidentiality, like secure messaging or digital watermarking.
 </p>
 
 ## Features
 
-- [x] ℹ️ Add SteganographyKit features
+- [x] Add SteganographyKit features
 
 ## Example
 
 The example application is the best way to see `SteganographyKit` in action. Simply open the `SteganographyKit.xcodeproj` and run the `Example` scheme.
 
 ## Installation
-
-### CocoaPods
-
-SteganographyKit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```bash
-pod 'SteganographyKit'
-```
-
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-To integrate SteganographyKit into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "caiofranca5/SteganographyKit"
-```
-
-Run `carthage update --use-xcframeworks` to build the framework and drag the built `SteganographyKit.xcframework` bundles from Carthage/Build into the "Frameworks and Libraries" section of your application’s Xcode project.
 
 ### Swift Package Manager
 
@@ -76,9 +55,6 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 ## Usage
 
 ℹ️ Describe the usage of your Kit
-
-## Contributing
-Contributions are very welcome 🙌
 
 ## License
 
