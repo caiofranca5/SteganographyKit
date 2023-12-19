@@ -19,7 +19,7 @@ struct RGBA32: Equatable {
     static let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
 }
 
-class SteganographyManager {
+public class SteganographyManager {
     
     static func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
         guard let inputCGImage = image.cgImage else { return nil }
