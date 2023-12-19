@@ -39,11 +39,5 @@ class ViewController: UIViewController {
     override func loadView() {
         self.view = self.label
     }
-    
-    @objc func hideMessage() {
-        let image = UIImage()
-        let message = ""
-        let a = SteganographyManager.hideMessageInImage(image: image, message: message )
-    }
 
 }

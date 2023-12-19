@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct RGBA32: Equatable {
+struct RGBA32: Equatable {
     var color: UInt32
     
     var red: UInt8 {

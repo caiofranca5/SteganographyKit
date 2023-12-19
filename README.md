@@ -6,15 +6,6 @@
    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat" alt="Swift 5.2">
    </a>
-   <a href="http://cocoapods.org/pods/SteganographyKit">
-      <img src="https://img.shields.io/cocoapods/v/SteganographyKit.svg?style=flat" alt="Version">
-   </a>
-   <a href="http://cocoapods.org/pods/SteganographyKit">
-      <img src="https://img.shields.io/cocoapods/p/SteganographyKit.svg?style=flat" alt="Platform">
-   </a>
-   <a href="https://github.com/Carthage/Carthage">
-      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
-   </a>
    <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
    </a>
@@ -45,12 +36,6 @@ dependencies: [
     .package(url: "https://github.com/caiofranca5/SteganographyKit.git", from: "1.0.0")
 ]
 ```
-
-Alternatively navigate to your Xcode project, select `Swift Packages` and click the `+` icon to search for `SteganographyKit`.
-
-### Manually
-
-If you prefer not to use any of the aforementioned dependency managers, you can integrate SteganographyKit into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
 ## Usage
 
