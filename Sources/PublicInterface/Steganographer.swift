@@ -21,14 +21,14 @@ public class Steganographer {
     ///   - image: The image in which the message will be encoded.
     /// - Returns: An image with the encoded message or nil if the operation fails.
     public static func encodeMessage(_ message: String, inImage image: UIImage) -> UIImage? {
-        return SteganographyManager().hideMessageInImage(image: image, message: message)
+        return SteganographyManager.hideMessageInImage(image: image, message: message)
     }
 
     /// Decodes a message from an image.
     /// - Parameter image: The image containing the encoded message.
     /// - Returns: The decoded message or nil if no message is found or if the operation fails.
     public static func decodeMessage(fromImage image: UIImage) -> String? {
-        return SteganographyManager().readMessageFromImage(image: image)
+        return SteganographyManager.readMessageFromImage(image: image)
     }
 
 }
