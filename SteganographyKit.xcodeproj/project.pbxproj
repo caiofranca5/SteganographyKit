@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D3561662B313B9500C08D33 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* SteganographyManager.swift */; };
+		3D3561662B313B9500C08D33 /* Steganographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* Steganographer.swift */; };
 		3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616D2B320FEA00C08D33 /* WelcomeView.swift */; };
 		3D3561702B32946D00C08D33 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616F2B32946C00C08D33 /* FormView.swift */; };
 		3D3561722B32A2D300C08D33 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561712B32A2D300C08D33 /* FormViewController.swift */; };
@@ -22,7 +22,7 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; };
 		3D9C433522746323000A6585 /* SteganographyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3DE60FB02B3374C800B474B5 /* Steganographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FAF2B3374C800B474B5 /* Steganographer.swift */; };
+		3DE60FB02B3374C800B474B5 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D3561652B313B9500C08D33 /* SteganographyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManager.swift; sourceTree = "<group>"; };
+		3D3561652B313B9500C08D33 /* Steganographer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steganographer.swift; sourceTree = "<group>"; };
 		3D35616D2B320FEA00C08D33 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3D35616F2B32946C00C08D33 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		3D3561712B32A2D300C08D33 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DE60FAF2B3374C800B474B5 /* Steganographer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steganographer.swift; sourceTree = "<group>"; };
+		3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C42A122745900000A6585 /* SteganographyKit.swift */,
-				3DE60FAF2B3374C800B474B5 /* Steganographer.swift */,
+				3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */,
 			);
 			path = PublicInterface;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 		3DE60FB22B3378CC00B474B5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3D3561652B313B9500C08D33 /* SteganographyManager.swift */,
+				3D3561652B313B9500C08D33 /* Steganographer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -362,8 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3561662B313B9500C08D33 /* SteganographyManager.swift in Sources */,
-				3DE60FB02B3374C800B474B5 /* Steganographer.swift in Sources */,
+				3D3561662B313B9500C08D33 /* Steganographer.swift in Sources */,
+				3DE60FB02B3374C800B474B5 /* SteganographyManager.swift in Sources */,
 				3D9C42A222745900000A6585 /* SteganographyKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

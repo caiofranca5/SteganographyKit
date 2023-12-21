@@ -1,5 +1,5 @@
 //
-//  SteganographyManager.swift
+//  Steganographer.swift
 //  SteganographyKit
 //
 //  Created by Caio Franca on 18 de dez. de 2023.
@@ -19,7 +19,7 @@ struct RGBA32: Equatable {
     static let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
 }
 
-final class SteganographyManager {
+final class Steganographer {
     
     static func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
         guard let inputCGImage = image.cgImage else { return nil }
