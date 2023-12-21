@@ -24,9 +24,10 @@ final class SteganographyManager {
     static func hideMessageInImage(image: UIImage, message: String) -> UIImage? {
         guard let inputCGImage = image.cgImage else { return nil }
         let bitmapData = createBitmap(from: inputCGImage)
+        let messageWithSpecialFinalCharacter = message + String(Character(UnicodeScalar(0)))
         
         var bitIndex = 0
-        let messageBits = message.utf8.flatMap { byte -> [Bool] in
+        let messageBits = messageWithSpecialFinalCharacter.utf8.flatMap { byte -> [Bool] in
             return (0..<8).map { i in
                 return (byte >> i) & 1 == 1
             }
