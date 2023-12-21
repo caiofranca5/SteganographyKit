@@ -49,8 +49,8 @@ import SteganographyKit
 
     /// Encodes a message into an image.
     /// - Parameters:
-    ///   - message: The message to be encoded.
-    ///   - image: The image in which the message will be encoded.
+    ///   - message: The message to be encoded. (String)
+    ///   - image: The image in which the message will be encoded. (UIImage)
     /// - Returns: An image with the encoded message or nil if the operation fails.
     
     let imageWithHiddenMessage = SteganographyManager.encodeMessage(message, inImage: image)
@@ -64,16 +64,16 @@ import SteganographyKit
 import SteganographyKit
 
     /// Decodes a message from an image.
-    /// - Parameter image: The image containing the encoded message.
+    /// - Parameter image: The image containing the encoded message. (UIImage)
     /// - Returns: The decoded message or nil if no message is found or if the operation fails.
     
     let hiddenMessage = SteganographyManager.decodeMessage(fromImage: image)
     
 
+```
 
 ## License
 
-```
 SteganographyKit
 Copyright (c) 2023 SteganographyKit Caio Franca caiofranca5@hotmail.com
 
