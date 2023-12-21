@@ -12,8 +12,19 @@ class FormViewController: UIViewController {
 
     // MARK: - Properties
     weak var coordinator: OnboardingCoordinator?
-    private let viewModel = FormViewModel()
+    private let viewModel: OnboardingViewModel
     private lazy var contentView = FormView()
+    
+    // MARK: - Init
+    
+    init(viewModel: OnboardingViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Controller Life Cycle
     
@@ -31,6 +42,8 @@ class FormViewController: UIViewController {
     
 }
 
+// MARK: - View Delegate Actions
+
 extension FormViewController: FormViewDelegate {
     
     func didTapContinue() {
@@ -39,6 +52,8 @@ extension FormViewController: FormViewDelegate {
     }
     
 }
+
+// MARK: - UITextFieldDelegate
 
 extension FormViewController: UITextFieldDelegate {
     
@@ -49,13 +64,16 @@ extension FormViewController: UITextFieldDelegate {
             textField.resignFirstResponder()
         }
         
+        return true
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+
         if contentView.nameTextfield.text != "" && contentView.birthdayTextfield.text != "" {
             contentView.continueButton.isEnabled = true
         } else {
             contentView.continueButton.isEnabled = false
         }
-        
-        return true
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {

@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "Open Doodles - Ice Cream.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Open Doodles - Ice Cream2.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -11,7 +11,7 @@
 		3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616D2B320FEA00C08D33 /* WelcomeView.swift */; };
 		3D3561702B32946D00C08D33 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616F2B32946C00C08D33 /* FormView.swift */; };
 		3D3561722B32A2D300C08D33 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561712B32A2D300C08D33 /* FormViewController.swift */; };
-		3D3561752B32AEEE00C08D33 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561742B32AEEE00C08D33 /* FormViewModel.swift */; };
+		3D3561752B32AEEE00C08D33 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */; };
 		3D3561782B32B44B00C08D33 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561772B32B44B00C08D33 /* Coordinator.swift */; };
 		3D9C42A222745900000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
 		3D9C42F62274604A000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; };
@@ -25,6 +25,8 @@
 		3DE60FB02B3374C800B474B5 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */; };
 		3DE60FB82B33F10D00B474B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE60FB62B33F10D00B474B5 /* Assets.xcassets */; };
 		3DE60FBA2B33FA2400B474B5 /* SteganographyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */; };
+		3DE60FBD2B34CBC900B474B5 /* UploadDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */; };
+		3DE60FBF2B34CCDC00B474B5 /* UploadDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,7 @@
 		3D35616D2B320FEA00C08D33 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3D35616F2B32946C00C08D33 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		3D3561712B32A2D300C08D33 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		3D3561742B32AEEE00C08D33 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		3D3561772B32B44B00C08D33 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* SteganographyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SteganographyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* SteganographyKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SteganographyKit.plist; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManager.swift; sourceTree = "<group>"; };
 		3DE60FB62B33F10D00B474B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManagerTests.swift; sourceTree = "<group>"; };
+		3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDocumentViewController.swift; sourceTree = "<group>"; };
+		3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDocumentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 			children = (
 				3D3561712B32A2D300C08D33 /* FormViewController.swift */,
 				3D35616F2B32946C00C08D33 /* FormView.swift */,
-				3D3561742B32AEEE00C08D33 /* FormViewModel.swift */,
+				3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -190,9 +194,11 @@
 			children = (
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
 				3D9C4333227462B9000A6585 /* Resources */,
-				3D3561772B32B44B00C08D33 /* Coordinator.swift */,
+				3DE60FBB2B34B16900B474B5 /* Coordinator */,
 				3D3561762B32AF6500C08D33 /* Welcome */,
 				3D3561732B32AECA00C08D33 /* Form */,
+				3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */,
+				3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -222,6 +228,14 @@
 				3D3561652B313B9500C08D33 /* Steganographer.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		3DE60FBB2B34B16900B474B5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3D3561772B32B44B00C08D33 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +400,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3561752B32AEEE00C08D33 /* FormViewModel.swift in Sources */,
+				3DE60FBD2B34CBC900B474B5 /* UploadDocumentViewController.swift in Sources */,
+				3DE60FBF2B34CCDC00B474B5 /* UploadDocumentView.swift in Sources */,
+				3D3561752B32AEEE00C08D33 /* OnboardingViewModel.swift in Sources */,
 				3D9C43262274629B000A6585 /* WelcomeViewController.swift in Sources */,
 				3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */,
 				3D3561702B32946D00C08D33 /* FormView.swift in Sources */,

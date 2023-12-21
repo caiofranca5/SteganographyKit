@@ -1,19 +1,18 @@
 //
-//  WelcomeViewController.swift
+//  UploadDocumentViewController.swift
 //  Example
 //
-//  Created by Caio França on 20/12/23.
+//  Created by Caio França on 21/12/23.
 //  Copyright © 2023 SteganographyKit. All rights reserved.
 //
 
 import UIKit
-import SteganographyKit
 
-class WelcomeViewController: UIViewController {
+class UploadDocumentViewController: UIViewController {
 
     // MARK: - Properties
     weak var coordinator: OnboardingCoordinator?
-    private lazy var contentView = WelcomeView()
+    private lazy var contentView = UploadDocumentView()
     private let viewModel: OnboardingViewModel
     
     // MARK: - Init
@@ -40,10 +39,10 @@ class WelcomeViewController: UIViewController {
 
 }
 
-extension WelcomeViewController: WelcomeViewDelegate {
+extension UploadDocumentViewController: UploadDocumentViewDelegate {
     
     func didTapContinue() {
-        coordinator?.presentFormView()
+        coordinator?.navigationController.popToRootViewController(animated: true)
     }
     
 }

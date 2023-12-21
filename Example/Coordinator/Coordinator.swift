@@ -15,6 +15,7 @@ protocol Coordinator {
 
 class OnboardingCoordinator: Coordinator {
     var navigationController: UINavigationController
+    let onboardingViewModel = OnboardingViewModel()
     
     init(navigationController: UINavigationController){
         self.navigationController = navigationController
@@ -22,19 +23,19 @@ class OnboardingCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = WelcomeViewController()
+        let viewController = WelcomeViewController(viewModel: onboardingViewModel)
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
     
     func presentFormView() {
-        let viewController = FormViewController()
+        let viewController = FormViewController(viewModel: onboardingViewModel)
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
     }
     
     func presentUploadDocumentView() {
-        let viewController = WelcomeViewController()
+        let viewController = UploadDocumentViewController(viewModel: onboardingViewModel)
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
     }

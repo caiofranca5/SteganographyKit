@@ -16,12 +16,41 @@ class WelcomeView: UIView {
     
     weak var delegate: WelcomeViewDelegate?
     
+    lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "WelcomeImage")
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    private lazy var welcomeTitleLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 2
+        label.font = UIFont.systemFont(ofSize: 24.0, weight: .semibold)
+        label.text = "Welcome to a World of Possibilities."
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var welcomeSubtitleLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 17.0, weight: .medium)
+        label.text = "Create your account today: provide personal Info, upload an ID Document for security, and begin exploring."
+        label.textColor = .secondaryLabel
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     private lazy var continueButton: UIButton = {
         var filled = UIButton.Configuration.filled()
         filled.cornerStyle = .large
         filled.baseBackgroundColor = .systemRed
         
-        var attText = AttributedString.init("Create Account")
+        var attText = AttributedString.init("Get Started")
         attText.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
         filled.attributedTitle = attText
         
@@ -52,11 +81,34 @@ class WelcomeView: UIView {
     }
     
     private func addSubviews() {
+        addSubview(imageView)
+        addSubview(welcomeTitleLabel)
+        addSubview(welcomeSubtitleLabel)
         addSubview(continueButton)
     }
     
     private func addConstraints() {
         let margins = self.safeAreaLayoutGuide
+        
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 16),
+            imageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 32),
+            imageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -32),
+            imageView.heightAnchor.constraint(equalTo: margins.heightAnchor, multiplier: 0.4)
+            
+        ])
+        
+        NSLayoutConstraint.activate([
+            welcomeSubtitleLabel.topAnchor.constraint(equalTo: welcomeTitleLabel.bottomAnchor, constant: 16),
+            welcomeSubtitleLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 16),
+            welcomeSubtitleLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -16),
+        ])
+        
+        NSLayoutConstraint.activate([
+            welcomeTitleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 64),
+            welcomeTitleLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 16),
+            welcomeTitleLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -16),
+        ])
         
         NSLayoutConstraint.activate([
             continueButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 16),
