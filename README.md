@@ -1,15 +1,15 @@
-<p align="center">
-   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="SteganographyKit Logo">
-</p>
-
-<p align="center">
-   <a href="https://developer.apple.com/swift/">
-      <img src="https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat" alt="Swift 5.2">
-   </a>
-   <a href="https://github.com/apple/swift-package-manager">
-      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
-   </a>
-</p>
+<!--<p align="center">-->
+<!--   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="SteganographyKit Logo">-->
+<!--</p>-->
+<!---->
+<!--<p align="center">-->
+<!--   <a href="https://developer.apple.com/swift/">-->
+<!--      <img src="https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat" alt="Swift 5.2">-->
+<!--   </a>-->
+<!--   <a href="https://github.com/apple/swift-package-manager">-->
+<!--      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">-->
+<!--   </a>-->
+<!--</p>-->
 
 # SteganographyKit
 
@@ -74,6 +74,7 @@ import SteganographyKit
 
 ## License
 
+```
 SteganographyKit
 Copyright (c) 2023 SteganographyKit Caio Franca caiofranca5@hotmail.com
 
