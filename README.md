@@ -19,7 +19,10 @@ SteganographyKit is an iOS framework designed to seamlessly integrate steganogra
 
 ## Features
 
-- [x] Add SteganographyKit features
+- [x] Allows embedding of secret text messages into images without altering their visible appearance.
+- [x] Provides the ability to extract hidden messages from images, ensuring data retrieval is as seamless as encoding.
+- [x] Ensures that the visual quality of images is not compromised during the steganography process.
+- [x] Provides a straightforward and intuitive public API, making it accessible for developers of all skill levels.
 
 ## Example
 
@@ -39,13 +42,40 @@ dependencies: [
 
 ## Usage
 
-ℹ️ Describe the usage of your Kit
+### How to encode a message in an image
+
+```swift
+import SteganographyKit
+
+    /// Encodes a message into an image.
+    /// - Parameters:
+    ///   - message: The message to be encoded.
+    ///   - image: The image in which the message will be encoded.
+    /// - Returns: An image with the encoded message or nil if the operation fails.
+    
+    let imageWithHiddenMessage = SteganographyManager.encodeMessage(message, inImage: image)
+    
+
+```
+
+### How to decode a message from an image
+
+```swift
+import SteganographyKit
+
+    /// Decodes a message from an image.
+    /// - Parameter image: The image containing the encoded message.
+    /// - Returns: The decoded message or nil if no message is found or if the operation fails.
+    
+    let hiddenMessage = SteganographyManager.decodeMessage(fromImage: image)
+    
+
 
 ## License
 
 ```
 SteganographyKit
-Copyright (c) 2023 SteganographyKit caiofranca5@hotmail.com
+Copyright (c) 2023 SteganographyKit Caio Franca caiofranca5@hotmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
