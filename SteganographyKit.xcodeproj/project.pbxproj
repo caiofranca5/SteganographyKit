@@ -15,7 +15,7 @@
 		3D3561782B32B44B00C08D33 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561772B32B44B00C08D33 /* Coordinator.swift */; };
 		3D9C42A222745900000A6585 /* SteganographyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* SteganographyKit.swift */; };
 		3D9C42F62274604A000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; };
-		3D9C42FC22746078000A6585 /* SteganographyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */; };
+		3D9C42FC22746078000A6585 /* SteganographerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* SteganographerTests.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* WelcomeViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
@@ -23,6 +23,8 @@
 		3D9C433422746323000A6585 /* SteganographyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; };
 		3D9C433522746323000A6585 /* SteganographyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* SteganographyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DE60FB02B3374C800B474B5 /* SteganographyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */; };
+		3DE60FB82B33F10D00B474B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE60FB62B33F10D00B474B5 /* Assets.xcassets */; };
+		3DE60FBA2B33FA2400B474B5 /* SteganographyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +72,8 @@
 		3D9C42D222745B48000A6585 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		3D9C42D322745B48000A6585 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyKitTests.swift; sourceTree = "<group>"; };
+		3D9C42D722745CDE000A6585 /* SteganographerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographerTests.swift; sourceTree = "<group>"; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
-		3D9C42EC22745FDA000A6585 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		3D9C42F12274604A000A6585 /* SteganographyKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SteganographyKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43212274629B000A6585 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43232274629B000A6585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,8 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE60FAF2B3374C800B474B5 /* SteganographyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManager.swift; sourceTree = "<group>"; };
+		3DE60FB62B33F10D00B474B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +178,9 @@
 		3D9C42A32274595F000A6585 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
-				3D9C42D722745CDE000A6585 /* SteganographyKitTests.swift */,
+				3D9C42D722745CDE000A6585 /* SteganographerTests.swift */,
+				3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */,
+				3DE60FB62B33F10D00B474B5 /* Assets.xcassets */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -343,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE60FB82B33F10D00B474B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42FC22746078000A6585 /* SteganographyKitTests.swift in Sources */,
+				3DE60FBA2B33FA2400B474B5 /* SteganographyManagerTests.swift in Sources */,
+				3D9C42FC22746078000A6585 /* SteganographerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

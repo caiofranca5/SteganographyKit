@@ -10,9 +10,6 @@ import UIKit
 
 public class SteganographyManager {
 
-    // MARK: - Initialization
-    public init() {}
-
     // MARK: - Public Methods
 
     /// Encodes a message into an image.
