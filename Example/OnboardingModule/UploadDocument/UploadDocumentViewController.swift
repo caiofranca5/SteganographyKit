@@ -9,7 +9,7 @@
 import UIKit
 
 class UploadDocumentViewController: UIViewController {
-
+    
     // MARK: - Properties
     weak var coordinator: OnboardingCoordinator?
     private lazy var contentView = UploadDocumentView()
@@ -38,7 +38,7 @@ class UploadDocumentViewController: UIViewController {
         contentView.delegate = self
         imagePicker.delegate = self
     }
-
+    
 }
 
 // MARK: - View Delegate
@@ -46,6 +46,8 @@ class UploadDocumentViewController: UIViewController {
 extension UploadDocumentViewController: UploadDocumentViewDelegate {
     
     func didTapContinue() {
+        self.view = LoadingView()
+        self.navigationController?.navigationBar.isHidden = true
         viewModel.sendUserData()
     }
     
@@ -65,4 +67,5 @@ extension UploadDocumentViewController: UIImagePickerControllerDelegate & UINavi
             contentView.continueButton.isEnabled = true
         }
         dismiss(animated: true, completion: nil)
-    }}
+    }
+}

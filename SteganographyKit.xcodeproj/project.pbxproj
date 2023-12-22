@@ -34,6 +34,7 @@
 		3DE60FCC2B352AE700B474B5 /* MockedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCB2B352AE700B474B5 /* MockedAPI.swift */; };
 		3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCE2B3539DB00B474B5 /* UserData.swift */; };
 		3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */; };
+		3DE60FD52B353EE600B474B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD42B353EE600B474B5 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		3DE60FCB2B352AE700B474B5 /* MockedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAPI.swift; sourceTree = "<group>"; };
 		3DE60FCE2B3539DB00B474B5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
+		3DE60FD42B353EE600B474B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,9 +212,7 @@
 				3DE60FD22B353A0900B474B5 /* Model */,
 				3DE60FBB2B34B16900B474B5 /* Coordinator */,
 				3DE60FC22B35234500B474B5 /* Network */,
-				3D3561762B32AF6500C08D33 /* Welcome */,
-				3D3561732B32AECA00C08D33 /* Form */,
-				3DE60FC02B350B8800B474B5 /* UploadDocument */,
+				3DE60FD32B353DD600B474B5 /* OnboardingModule */,
 				3DE60FC12B350FD600B474B5 /* Shared */,
 			);
 			path = Example;
@@ -265,7 +265,7 @@
 		3DE60FC12B350FD600B474B5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */,
+				3DE60FD42B353EE600B474B5 /* LoadingView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -297,6 +297,17 @@
 				3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3DE60FD32B353DD600B474B5 /* OnboardingModule */ = {
+			isa = PBXGroup;
+			children = (
+				3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */,
+				3D3561762B32AF6500C08D33 /* Welcome */,
+				3D3561732B32AECA00C08D33 /* Form */,
+				3DE60FC02B350B8800B474B5 /* UploadDocument */,
+			);
+			path = OnboardingModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +476,7 @@
 				3DE60FBF2B34CCDC00B474B5 /* UploadDocumentView.swift in Sources */,
 				3DE60FC62B3523A000B474B5 /* HTTPScheme.swift in Sources */,
 				3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */,
+				3DE60FD52B353EE600B474B5 /* LoadingView.swift in Sources */,
 				3DE60FCA2B35260000B474B5 /* NetworkManager.swift in Sources */,
 				3D3561752B32AEEE00C08D33 /* OnboardingViewModel.swift in Sources */,
 				3DE60FC82B3523B800B474B5 /* APIProtocol.swift in Sources */,
