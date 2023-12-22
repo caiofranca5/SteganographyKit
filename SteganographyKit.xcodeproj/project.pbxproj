@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D3561662B313B9500C08D33 /* Steganographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561652B313B9500C08D33 /* Steganographer.swift */; };
-		3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616D2B320FEA00C08D33 /* WelcomeView.swift */; };
+		3D35616E2B320FEA00C08D33 /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616D2B320FEA00C08D33 /* TemplateView.swift */; };
 		3D3561702B32946D00C08D33 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35616F2B32946C00C08D33 /* FormView.swift */; };
 		3D3561722B32A2D300C08D33 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561712B32A2D300C08D33 /* FormViewController.swift */; };
 		3D3561752B32AEEE00C08D33 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */; };
@@ -35,6 +35,7 @@
 		3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCE2B3539DB00B474B5 /* UserData.swift */; };
 		3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */; };
 		3DE60FD52B353EE600B474B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD42B353EE600B474B5 /* LoadingView.swift */; };
+		3DE60FD72B35457300B474B5 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD62B35457300B474B5 /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,7 @@
 
 /* Begin PBXFileReference section */
 		3D3561652B313B9500C08D33 /* Steganographer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steganographer.swift; sourceTree = "<group>"; };
-		3D35616D2B320FEA00C08D33 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3D35616D2B320FEA00C08D33 /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		3D35616F2B32946C00C08D33 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		3D3561712B32A2D300C08D33 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		3DE60FCE2B3539DB00B474B5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
 		3DE60FD42B353EE600B474B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3DE60FD62B35457300B474B5 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				3D9C43252274629B000A6585 /* WelcomeViewController.swift */,
-				3D35616D2B320FEA00C08D33 /* WelcomeView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -265,6 +266,7 @@
 		3DE60FC12B350FD600B474B5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3D35616D2B320FEA00C08D33 /* TemplateView.swift */,
 				3DE60FD42B353EE600B474B5 /* LoadingView.swift */,
 			);
 			path = Shared;
@@ -306,8 +308,17 @@
 				3D3561762B32AF6500C08D33 /* Welcome */,
 				3D3561732B32AECA00C08D33 /* Form */,
 				3DE60FC02B350B8800B474B5 /* UploadDocument */,
+				3DE60FD82B35457B00B474B5 /* Success */,
 			);
 			path = OnboardingModule;
+			sourceTree = "<group>";
+		};
+		3DE60FD82B35457B00B474B5 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				3DE60FD62B35457300B474B5 /* SuccessViewController.swift */,
+			);
+			path = Success;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,7 +493,8 @@
 				3DE60FC82B3523B800B474B5 /* APIProtocol.swift in Sources */,
 				3D9C43262274629B000A6585 /* WelcomeViewController.swift in Sources */,
 				3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */,
-				3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */,
+				3DE60FD72B35457300B474B5 /* SuccessViewController.swift in Sources */,
+				3D35616E2B320FEA00C08D33 /* TemplateView.swift in Sources */,
 				3D3561702B32946D00C08D33 /* FormView.swift in Sources */,
 				3DE60FCC2B352AE700B474B5 /* MockedAPI.swift in Sources */,
 				3D3561722B32A2D300C08D33 /* FormViewController.swift in Sources */,

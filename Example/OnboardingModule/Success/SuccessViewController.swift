@@ -1,15 +1,14 @@
 //
-//  WelcomeViewController.swift
+//  SuccessViewController.swift
 //  Example
 //
-//  Created by Caio França on 20/12/23.
+//  Created by Caio França on 22/12/23.
 //  Copyright © 2023 SteganographyKit. All rights reserved.
 //
 
 import UIKit
-import SteganographyKit
 
-class WelcomeViewController: UIViewController {
+class SuccessViewController: UIViewController {
 
     // MARK: - Properties
     weak var coordinator: OnboardingCoordinator?
@@ -30,10 +29,10 @@ class WelcomeViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        contentView.updateViewWith(newImage: "WelcomeImage",
-                                   newTitle: "Welcome to a World of Possibilities.",
-                                   newSubtitle: "Create your account today: provide personal information, upload an ID Document for security, and begin exploring.",
-                                   newButtonTitle: "Get Started")
+        contentView.updateViewWith(newImage: "Success",
+                                   newTitle: "Congratulations",
+                                   newSubtitle: "Your document ID, containing a hidden message, has been successfully uploaded.",
+                                   newButtonTitle: "Restart")
         self.view = contentView
     }
     
@@ -42,15 +41,12 @@ class WelcomeViewController: UIViewController {
         contentView.delegate = self
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
-    }
 }
 
-extension WelcomeViewController: TemplateViewDelegate {
+extension SuccessViewController: TemplateViewDelegate {
     
     func didTapContinue() {
-        coordinator?.presentFormView()
+        coordinator?.restart()
     }
     
 }

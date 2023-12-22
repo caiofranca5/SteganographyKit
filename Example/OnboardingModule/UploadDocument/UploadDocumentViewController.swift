@@ -46,9 +46,10 @@ class UploadDocumentViewController: UIViewController {
 extension UploadDocumentViewController: UploadDocumentViewDelegate {
     
     func didTapContinue() {
-        self.view = LoadingView()
+//        self.view = LoadingView()
         self.navigationController?.navigationBar.isHidden = true
-        viewModel.sendUserData()
+//        viewModel.sendUserData()
+        coordinator?.presentSuccessView()
     }
     
     func didTapUpload() {

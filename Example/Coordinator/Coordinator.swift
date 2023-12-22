@@ -40,6 +40,12 @@ class OnboardingCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    func presentSuccessView() {
+        let viewController = SuccessViewController(viewModel: onboardingViewModel)
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
     func restart() {
         navigationController.popToRootViewController(animated: true)
     }

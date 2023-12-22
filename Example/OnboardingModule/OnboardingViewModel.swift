@@ -39,7 +39,7 @@ class OnboardingViewModel {
     
     func sendUserData() {
         if let name = userName, let birthday = userBirthday {
-            let document = createDcumentImageWithEncodedMessage()
+            let _ = createDcumentImageWithEncodedMessage()?.jpegData(compressionQuality: 0.2)?.base64EncodedString()
             let userData = UserData(name: name,
                                     birthday: birthday,
                                     documentImageBase64: "") //document?.pngData()?.base64EncodedString())

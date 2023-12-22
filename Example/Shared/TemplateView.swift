@@ -1,5 +1,5 @@
 //
-//  WelcomeView.swift
+//  TemplateView.swift
 //  Example
 //
 //  Created by Caio França on 19/12/23.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-protocol WelcomeViewDelegate: AnyObject {
+protocol TemplateViewDelegate: AnyObject {
     func didTapContinue()
 }
 
-class WelcomeView: UIView {
+class TemplateView: UIView {
     
-    weak var delegate: WelcomeViewDelegate?
+    weak var delegate: TemplateViewDelegate?
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "WelcomeImage")
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -28,7 +27,6 @@ class WelcomeView: UIView {
         let label = UILabel()
         label.numberOfLines = 2
         label.font = UIFont.systemFont(ofSize: 22.0, weight: .semibold)
-        label.text = "Welcome to a World of Possibilities."
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -38,7 +36,6 @@ class WelcomeView: UIView {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
-        label.text = "Create your account today: provide personal information, upload an ID Document for security, and begin exploring."
         label.textColor = .secondaryLabel
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +47,7 @@ class WelcomeView: UIView {
         filled.cornerStyle = .large
         filled.baseBackgroundColor = .systemRed
         
-        var attText = AttributedString.init("Get Started")
+        var attText = AttributedString.init("")
         attText.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
         filled.attributedTitle = attText
         
@@ -122,10 +119,26 @@ class WelcomeView: UIView {
 
 //MARK: - View Actions
 
-extension WelcomeView {
+extension TemplateView {
     
     @objc func continueButtonTapped() {
         delegate?.didTapContinue()
+    }
+    
+}
+
+//MARK: - View Actions
+
+extension TemplateView {
+    
+    func updateViewWith(newImage: String, newTitle: String, newSubtitle: String, newButtonTitle: String) {
+        var attText = AttributedString.init(newButtonTitle)
+        attText.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+        
+        imageView.image = UIImage(named: newImage)
+        welcomeTitleLabel.text = newTitle
+        welcomeSubtitleLabel.text = newSubtitle
+        continueButton.configuration?.attributedTitle = attText
     }
     
 }
