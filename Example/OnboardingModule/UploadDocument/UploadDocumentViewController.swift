@@ -35,6 +35,7 @@ class UploadDocumentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         contentView.delegate = self
         imagePicker.delegate = self
     }
@@ -46,16 +47,25 @@ class UploadDocumentViewController: UIViewController {
 extension UploadDocumentViewController: UploadDocumentViewDelegate {
     
     func didTapContinue() {
-//        self.view = LoadingView()
+        self.view = LoadingView()
         self.navigationController?.navigationBar.isHidden = true
-//        viewModel.sendUserData()
-        coordinator?.presentSuccessView()
+        viewModel.sendUserData()
     }
     
     func didTapUpload() {
         present(imagePicker, animated: true)
     }
     
+}
+
+// MARK: - ViewModel Delegate
+
+extension UploadDocumentViewController: OnboardingViewModelDelegate {
+    
+    func didUploadData() {
+        coordinator?.presentSuccessView()
+    }
+
 }
 
 // MARK: - UIImagePickerControllerDelegate

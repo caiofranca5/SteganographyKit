@@ -9,7 +9,12 @@
 import UIKit
 import SteganographyKit
 
+protocol OnboardingViewModelDelegate: AnyObject {
+    func didUploadData()
+}
+
 class OnboardingViewModel {
+    weak var delegate: OnboardingViewModelDelegate?
     var userName: String?
     var userBirthday: String?
     var userDocumentImage: UIImage?
@@ -50,7 +55,9 @@ class OnboardingViewModel {
                 switch result {
                 case .success(let response):
                     self?.successResponse = response
-                    print(response)
+                    DispatchQueue.main.async {
+                        self?.delegate?.didUploadData()
+                    }
                 case .failure(let error):
                     print(error)
                 }
