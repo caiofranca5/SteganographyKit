@@ -27,6 +27,13 @@
 		3DE60FBA2B33FA2400B474B5 /* SteganographyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */; };
 		3DE60FBD2B34CBC900B474B5 /* UploadDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */; };
 		3DE60FBF2B34CCDC00B474B5 /* UploadDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */; };
+		3DE60FC42B35238A00B474B5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FC32B35238A00B474B5 /* HTTPMethod.swift */; };
+		3DE60FC62B3523A000B474B5 /* HTTPScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FC52B3523A000B474B5 /* HTTPScheme.swift */; };
+		3DE60FC82B3523B800B474B5 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FC72B3523B800B474B5 /* APIProtocol.swift */; };
+		3DE60FCA2B35260000B474B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FC92B35260000B474B5 /* NetworkManager.swift */; };
+		3DE60FCC2B352AE700B474B5 /* MockedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCB2B352AE700B474B5 /* MockedAPI.swift */; };
+		3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCE2B3539DB00B474B5 /* UserData.swift */; };
+		3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,13 @@
 		3DE60FB92B33FA2400B474B5 /* SteganographyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyManagerTests.swift; sourceTree = "<group>"; };
 		3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDocumentViewController.swift; sourceTree = "<group>"; };
 		3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDocumentView.swift; sourceTree = "<group>"; };
+		3DE60FC32B35238A00B474B5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3DE60FC52B3523A000B474B5 /* HTTPScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPScheme.swift; sourceTree = "<group>"; };
+		3DE60FC72B3523B800B474B5 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		3DE60FC92B35260000B474B5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3DE60FCB2B352AE700B474B5 /* MockedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAPI.swift; sourceTree = "<group>"; };
+		3DE60FCE2B3539DB00B474B5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +136,6 @@
 			children = (
 				3D3561712B32A2D300C08D33 /* FormViewController.swift */,
 				3D35616F2B32946C00C08D33 /* FormView.swift */,
-				3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -194,11 +207,13 @@
 			children = (
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
 				3D9C4333227462B9000A6585 /* Resources */,
+				3DE60FD22B353A0900B474B5 /* Model */,
 				3DE60FBB2B34B16900B474B5 /* Coordinator */,
+				3DE60FC22B35234500B474B5 /* Network */,
 				3D3561762B32AF6500C08D33 /* Welcome */,
 				3D3561732B32AECA00C08D33 /* Form */,
-				3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */,
-				3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */,
+				3DE60FC02B350B8800B474B5 /* UploadDocument */,
+				3DE60FC12B350FD600B474B5 /* Shared */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -236,6 +251,52 @@
 				3D3561772B32B44B00C08D33 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3DE60FC02B350B8800B474B5 /* UploadDocument */ = {
+			isa = PBXGroup;
+			children = (
+				3DE60FBC2B34CBC900B474B5 /* UploadDocumentViewController.swift */,
+				3DE60FBE2B34CCDC00B474B5 /* UploadDocumentView.swift */,
+			);
+			path = UploadDocument;
+			sourceTree = "<group>";
+		};
+		3DE60FC12B350FD600B474B5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3D3561742B32AEEE00C08D33 /* OnboardingViewModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3DE60FC22B35234500B474B5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3DE60FC32B35238A00B474B5 /* HTTPMethod.swift */,
+				3DE60FC52B3523A000B474B5 /* HTTPScheme.swift */,
+				3DE60FC72B3523B800B474B5 /* APIProtocol.swift */,
+				3DE60FC92B35260000B474B5 /* NetworkManager.swift */,
+				3DE60FCD2B352FA300B474B5 /* APIs */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3DE60FCD2B352FA300B474B5 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				3DE60FCB2B352AE700B474B5 /* MockedAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		3DE60FD22B353A0900B474B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DE60FCE2B3539DB00B474B5 /* UserData.swift */,
+				3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,12 +463,19 @@
 			files = (
 				3DE60FBD2B34CBC900B474B5 /* UploadDocumentViewController.swift in Sources */,
 				3DE60FBF2B34CCDC00B474B5 /* UploadDocumentView.swift in Sources */,
+				3DE60FC62B3523A000B474B5 /* HTTPScheme.swift in Sources */,
+				3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */,
+				3DE60FCA2B35260000B474B5 /* NetworkManager.swift in Sources */,
 				3D3561752B32AEEE00C08D33 /* OnboardingViewModel.swift in Sources */,
+				3DE60FC82B3523B800B474B5 /* APIProtocol.swift in Sources */,
 				3D9C43262274629B000A6585 /* WelcomeViewController.swift in Sources */,
+				3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */,
 				3D35616E2B320FEA00C08D33 /* WelcomeView.swift in Sources */,
 				3D3561702B32946D00C08D33 /* FormView.swift in Sources */,
+				3DE60FCC2B352AE700B474B5 /* MockedAPI.swift in Sources */,
 				3D3561722B32A2D300C08D33 /* FormViewController.swift in Sources */,
 				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
+				3DE60FC42B35238A00B474B5 /* HTTPMethod.swift in Sources */,
 				3D3561782B32B44B00C08D33 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,8 +747,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FS22QDCAVQ;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -701,8 +770,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FS22QDCAVQ;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -27,7 +27,7 @@ class WelcomeView: UIView {
     private lazy var welcomeTitleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 24.0, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 22.0, weight: .semibold)
         label.text = "Welcome to a World of Possibilities."
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -37,8 +37,8 @@ class WelcomeView: UIView {
     private lazy var welcomeSubtitleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 17.0, weight: .medium)
-        label.text = "Create your account today: provide personal Info, upload an ID Document for security, and begin exploring."
+        label.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
+        label.text = "Create your account today: provide personal information, upload an ID Document for security, and begin exploring."
         label.textColor = .secondaryLabel
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false

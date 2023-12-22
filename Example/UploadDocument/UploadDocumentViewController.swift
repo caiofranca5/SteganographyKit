@@ -14,6 +14,7 @@ class UploadDocumentViewController: UIViewController {
     weak var coordinator: OnboardingCoordinator?
     private lazy var contentView = UploadDocumentView()
     private let viewModel: OnboardingViewModel
+    private lazy var imagePicker = UIImagePickerController()
     
     // MARK: - Init
     init(viewModel: OnboardingViewModel) {
@@ -35,14 +36,33 @@ class UploadDocumentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.delegate = self
+        imagePicker.delegate = self
     }
 
 }
+
+// MARK: - View Delegate
 
 extension UploadDocumentViewController: UploadDocumentViewDelegate {
     
     func didTapContinue() {
-        coordinator?.navigationController.popToRootViewController(animated: true)
+        viewModel.sendUserData()
+    }
+    
+    func didTapUpload() {
+        present(imagePicker, animated: true)
     }
     
 }
+
+// MARK: - UIImagePickerControllerDelegate
+
+extension UploadDocumentViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[.originalImage] as? UIImage {
+            contentView.imageView.image = selectedImage
+            viewModel.fillDocument(documentImage: selectedImage)
+            contentView.continueButton.isEnabled = true
+        }
+        dismiss(animated: true, completion: nil)
+    }}

@@ -39,4 +39,8 @@ class OnboardingCoordinator: Coordinator {
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func restart() {
+        navigationController.popToRootViewController(animated: true)
+    }
 }

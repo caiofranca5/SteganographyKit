@@ -42,13 +42,15 @@ class FormViewController: UIViewController {
     
 }
 
-// MARK: - View Delegate Actions
+// MARK: - View Delegate
 
 extension FormViewController: FormViewDelegate {
     
     func didTapContinue() {
-        viewModel.presentNextStep()
-        coordinator?.presentUploadDocumentView()
+        if let name = contentView.nameTextfield.text, let birthday = contentView.birthdayTextfield.text {
+            viewModel.fillNameAndBirthday(name: name, birthday: birthday)
+            coordinator?.presentUploadDocumentView()
+        }
     }
     
 }
@@ -68,21 +70,11 @@ extension FormViewController: UITextFieldDelegate {
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-
         if contentView.nameTextfield.text != "" && contentView.birthdayTextfield.text != "" {
             contentView.continueButton.isEnabled = true
         } else {
             contentView.continueButton.isEnabled = false
         }
-    }
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField == contentView.nameTextfield {
-            viewModel.name = textField.text ?? ""
-        } else {
-            viewModel.birthday = textField.text ?? ""
-        }
-        return true
     }
     
 }
