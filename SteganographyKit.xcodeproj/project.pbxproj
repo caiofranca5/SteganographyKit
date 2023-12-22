@@ -36,6 +36,8 @@
 		3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */; };
 		3DE60FD52B353EE600B474B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD42B353EE600B474B5 /* LoadingView.swift */; };
 		3DE60FD72B35457300B474B5 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD62B35457300B474B5 /* SuccessViewController.swift */; };
+		3DE60FDB2B3551D300B474B5 /* RGBA32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD92B3551B100B474B5 /* RGBA32.swift */; };
+		3DE60FDC2B3551D300B474B5 /* RGBA32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD92B3551B100B474B5 /* RGBA32.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
 		3DE60FD42B353EE600B474B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3DE60FD62B35457300B474B5 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		3DE60FD92B3551B100B474B5 /* RGBA32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA32.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				3D3561652B313B9500C08D33 /* Steganographer.swift */,
+				3DE60FD92B3551B100B474B5 /* RGBA32.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -464,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE60FDC2B3551D300B474B5 /* RGBA32.swift in Sources */,
 				3D3561662B313B9500C08D33 /* Steganographer.swift in Sources */,
 				3DE60FB02B3374C800B474B5 /* SteganographyManager.swift in Sources */,
 				3D9C42A222745900000A6585 /* SteganographyKit.swift in Sources */,
@@ -476,6 +481,7 @@
 			files = (
 				3DE60FBA2B33FA2400B474B5 /* SteganographyManagerTests.swift in Sources */,
 				3D9C42FC22746078000A6585 /* SteganographerTests.swift in Sources */,
+				3DE60FDB2B3551D300B474B5 /* RGBA32.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
