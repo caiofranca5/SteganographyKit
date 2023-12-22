@@ -52,4 +52,40 @@ class SteganographerTests: XCTestCase {
 
         XCTAssertEqual(recoveredMessage, "", "Recovered message should be empty for an empty original message")
     }
+    
+    func testReadMessageFromImageAfterJPEGCompression() {
+        let originalMessage = "Test Message"
+        guard let imageWithHiddenMessage = Steganographer.hideMessageInImage(image: testImage, message: originalMessage) else {
+            XCTFail("Failed to hide message in image")
+            return
+        }
+
+        guard let jpegData = imageWithHiddenMessage.jpegData(compressionQuality: 0.5),
+              let compressedImage = UIImage(data: jpegData) else {
+            XCTFail("Failed to compress and decompress image")
+            return
+        }
+
+        let recoveredMessage = Steganographer.readMessageFromImage(image: compressedImage)
+
+        XCTAssertNotEqual(recoveredMessage, originalMessage, "Recovered message should not match the original")
+    }
+    
+    func testReadMessageFromImageAfterTransformingToPNGData() {
+        let originalMessage = "Test Message"
+        guard let imageWithHiddenMessage = Steganographer.hideMessageInImage(image: testImage, message: originalMessage) else {
+            XCTFail("Failed to hide message in image")
+            return
+        }
+
+        guard let pngData = imageWithHiddenMessage.pngData(),
+              let compressedImage = UIImage(data: pngData) else {
+            XCTFail("Failed to compress and decompress image")
+            return
+        }
+        
+        let recoveredMessage = Steganographer.readMessageFromImage(image: compressedImage)
+        XCTAssertEqual(recoveredMessage, originalMessage, "Recovered message should match the original")
+    }
+
 }
