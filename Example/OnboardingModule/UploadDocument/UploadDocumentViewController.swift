@@ -63,7 +63,11 @@ extension UploadDocumentViewController: UploadDocumentViewDelegate {
 extension UploadDocumentViewController: OnboardingViewModelDelegate {
     
     func didUploadData() {
-        coordinator?.presentSuccessView()
+        coordinator?.presentFeedbackView(feedback: .success)
+    }
+    
+    func didNotUploadData(error: Error) {
+        coordinator?.presentFeedbackView(feedback: .failure(error))
     }
 
 }

@@ -35,7 +35,7 @@
 		3DE60FCF2B3539DB00B474B5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FCE2B3539DB00B474B5 /* UserData.swift */; };
 		3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */; };
 		3DE60FD52B353EE600B474B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD42B353EE600B474B5 /* LoadingView.swift */; };
-		3DE60FD72B35457300B474B5 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD62B35457300B474B5 /* SuccessViewController.swift */; };
+		3DE60FD72B35457300B474B5 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD62B35457300B474B5 /* FeedbackViewController.swift */; };
 		3DE60FDB2B3551D300B474B5 /* RGBA32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD92B3551B100B474B5 /* RGBA32.swift */; };
 		3DE60FDC2B3551D300B474B5 /* RGBA32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE60FD92B3551B100B474B5 /* RGBA32.swift */; };
 /* End PBXBuildFile section */
@@ -107,7 +107,7 @@
 		3DE60FCE2B3539DB00B474B5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3DE60FD02B353A0200B474B5 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
 		3DE60FD42B353EE600B474B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		3DE60FD62B35457300B474B5 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		3DE60FD62B35457300B474B5 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		3DE60FD92B3551B100B474B5 /* RGBA32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA32.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,7 +320,7 @@
 		3DE60FD82B35457B00B474B5 /* Success */ = {
 			isa = PBXGroup;
 			children = (
-				3DE60FD62B35457300B474B5 /* SuccessViewController.swift */,
+				3DE60FD62B35457300B474B5 /* FeedbackViewController.swift */,
 			);
 			path = Success;
 			sourceTree = "<group>";
@@ -499,7 +499,7 @@
 				3DE60FC82B3523B800B474B5 /* APIProtocol.swift in Sources */,
 				3D9C43262274629B000A6585 /* WelcomeViewController.swift in Sources */,
 				3DE60FD12B353A0200B474B5 /* SuccessResponse.swift in Sources */,
-				3DE60FD72B35457300B474B5 /* SuccessViewController.swift in Sources */,
+				3DE60FD72B35457300B474B5 /* FeedbackViewController.swift in Sources */,
 				3D35616E2B320FEA00C08D33 /* TemplateView.swift in Sources */,
 				3D3561702B32946D00C08D33 /* FormView.swift in Sources */,
 				3DE60FCC2B352AE700B474B5 /* MockedAPI.swift in Sources */,

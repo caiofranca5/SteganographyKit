@@ -11,6 +11,7 @@ import SteganographyKit
 
 protocol OnboardingViewModelDelegate: AnyObject {
     func didUploadData()
+    func didNotUploadData(error: Error)
 }
 
 class OnboardingViewModel {
@@ -34,7 +35,7 @@ class OnboardingViewModel {
         self.userDocumentImage = documentImage
     }
     
-    func createDcumentImageWithEncodedMessage() -> UIImage? {
+    func createDocumentImageWithEncodedMessage() -> UIImage? {
         guard let name = userName, let birthday = userBirthday, let document = userDocumentImage else { return nil }
         
         let message = name + birthday
@@ -44,10 +45,10 @@ class OnboardingViewModel {
     
     func sendUserData() {
         if let name = userName, let birthday = userBirthday {
-            let _ = createDcumentImageWithEncodedMessage()?.jpegData(compressionQuality: 0.2)?.base64EncodedString()
+            let documentImageWithEncodedMessage = createDocumentImageWithEncodedMessage()
             let userData = UserData(name: name,
                                     birthday: birthday,
-                                    documentImageBase64: "") //document?.pngData()?.base64EncodedString())
+                                    documentImageBase64: documentImageWithEncodedMessage?.pngData()?.base64EncodedString())
             let endpoint: API = MockedAPI.createUser(userData)
             
             networkManager.request(endpoint: endpoint) { [weak self]
@@ -59,7 +60,9 @@ class OnboardingViewModel {
                         self?.delegate?.didUploadData()
                     }
                 case .failure(let error):
-                    print(error)
+                    DispatchQueue.main.async {
+                        self?.delegate?.didNotUploadData(error: error)
+                    }
                 }
             }
 

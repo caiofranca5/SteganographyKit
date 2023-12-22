@@ -13,6 +13,11 @@ protocol Coordinator {
     func start()
 }
 
+enum Feedback {
+    case success
+    case failure(Error)
+}
+
 class OnboardingCoordinator: Coordinator {
     var navigationController: UINavigationController
     let onboardingViewModel = OnboardingViewModel()
@@ -40,8 +45,8 @@ class OnboardingCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
-    func presentSuccessView() {
-        let viewController = SuccessViewController(viewModel: onboardingViewModel)
+    func presentFeedbackView(feedback: Feedback) {
+        let viewController = FeedbackViewController(viewModel: onboardingViewModel, feedback: feedback)
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
     }
